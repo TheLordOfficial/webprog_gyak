@@ -209,3 +209,33 @@ p {
   color: #555;
 }
 
+[data-aos] {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* WebKit-böngészők (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* háttér a csúszka mögött */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0dcaf0; /* maga a csúszka */
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+/* Firefox esetén */
+* {
+  scrollbar-color: #0dcaf0 #f1f1f1;
+  scrollbar-width: thin;
+}
+
+

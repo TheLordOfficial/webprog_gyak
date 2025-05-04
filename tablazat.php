@@ -169,9 +169,44 @@ $total_row = $total_result->fetch_assoc();
   </div>
 </div>
 
-  <footer class="bg-dark text-light text-center p-4 mt-5">
+<!-- Fancy képpörgető a célok szemléltetésére -->
+<div id="goalCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/auto.jpg" class="d-block w-100 img-fluid" style="max-height: 400px; object-fit: cover;" alt="Cél 1">
+            <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 5px;">
+                <h5 style="color: #fff;">Új autó vásárlása</h5>
+                <p style="color: #ddd;">Takarékoskodj az álmaid autójára!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/haz.jpg" class="d-block w-100 img-fluid" style="max-height: 400px; object-fit: cover;" alt="Cél 2">
+            <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 5px;">
+                <h5 style="color: #fff;">Álmaid otthona</h5>
+                <p style="color: #ddd;">Hogy legyen hol tárolni az autót!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/ora.jpg" class="d-block w-100 img-fluid" style="max-height: 400px; object-fit: cover;" alt="Cél 3">
+            <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 5px;">
+                <h5 style="color: #fff;">A világ összes órája</h5>
+                <p style="color: #ddd;">Hogy mindig tudd, hogy az idő pénz!</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#goalCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Előző</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#goalCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Következő</span>
+    </button>
+</div>
+
+<footer class="bg-dark text-light text-center p-4 mt-5" style="width: 100%; position: relative; left: 0;">
     <p class="mb-0">© 2025 Költségnyilvántartó. Minden jog fenntartva.</p>
-  </footer>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
