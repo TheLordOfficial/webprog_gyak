@@ -33,3 +33,7 @@ INSERT INTO koltsegek (datum, kategoria, osszeg, megjegyzes) VALUES
 ('2025-05-24', 'Szórakozás', 1900.00, 'Mozi film nézés');
 
 Ezt követően autómatikus csatlakozik ehhez az adatbázishoz a weboldal és használja.
+
+Mentési hely: C:\xampp\htdocs\tanacsadas\webprog_gyak
+A weboldalt ezen a linken lehet elérni, miztán jó helyre lettek mentve a fájlok.
+http://localhost/tanacsadas/webprog_gyak/
