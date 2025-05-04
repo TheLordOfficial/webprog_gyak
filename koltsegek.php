@@ -90,37 +90,30 @@ $result = $conn->query($sql);
     </table>
   </div>
 
-    <div class="container mt-4 mb-4">
-    <div class="text-center mt-4 mb-4">
-        <a href="tablazat.php" class="btn btn-secondary">További költségek megtekintése</a>
-    </div>
-    <div class="text-center mb-4">
-        <a href="index.html" class="btn btn-secondary">Vissza a kezdőlapra</a>
-    </div>
-  </div>
+    
 
 <div class="container mt-5">
     <h2 class="text-center mb-4">Elérhető Kategóriák</h2>
     <div class="row g-4 text-center">
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex align-items-stretch">
             <div class="card shadow-sm animate__animated animate__fadeIn">
-                <img src="images/food.jpg" alt="Élelmiszer" class="card-img-top rounded-top">
+                <img src="img/elelmiszer.jpg" alt="Élelmiszer" class="card-img-top rounded-top">
                 <div class="card-body">
                     <h5 class="card-title">Élelmiszer</h5>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex align-items-stretch">
             <div class="card shadow-sm animate__animated animate__fadeIn animate__delay-1s">
-                <img src="images/transport.jpg" alt="Közlekedés" class="card-img-top rounded-top">
+                <img src="img/tomegkozlekedes.jpg" alt="Közlekedés" class="card-img-top rounded-top">
                 <div class="card-body">
                     <h5 class="card-title">Közlekedés</h5>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex align-items-stretch">
             <div class="card shadow-sm animate__animated animate__fadeIn animate__delay-2s">
-                <img src="images/entertainment.jpg" alt="Szórakozás" class="card-img-top rounded-top">
+                <img src="img/szorakozas.jpg" alt="Szórakozás" class="card-img-top rounded-top">
                 <div class="card-body">
                     <h5 class="card-title">Szórakozás</h5>
                 </div>
@@ -128,25 +121,25 @@ $result = $conn->query($sql);
         </div>
     </div>
     <div class="row g-4 text-center mt-4">
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex align-items-stretch">
             <div class="card shadow-sm animate__animated animate__fadeIn animate__delay-3s">
-                <img src="images/health.jpg" alt="Egészség" class="card-img-top rounded-top">
+                <img src="img/egeszseg.png" alt="Egészség" class="card-img-top rounded-top">
                 <div class="card-body">
                     <h5 class="card-title">Egészség</h5>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex align-items-stretch">
             <div class="card shadow-sm animate__animated animate__fadeIn animate__delay-4s">
-                <img src="images/education.jpg" alt="Oktatás" class="card-img-top rounded-top">
+                <img src="img/oktatas.png" alt="Oktatás" class="card-img-top rounded-top">
                 <div class="card-body">
                     <h5 class="card-title">Oktatás</h5>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex align-items-stretch">
             <div class="card shadow-sm animate__animated animate__fadeIn animate__delay-5s">
-                <img src="images/other.jpg" alt="Egyéb" class="card-img-top rounded-top">
+                <img src="img/egyeb.jpg" alt="Egyéb" class="card-img-top rounded-top">
                 <div class="card-body">
                     <h5 class="card-title">Egyéb</h5>
                 </div>
@@ -155,6 +148,15 @@ $result = $conn->query($sql);
     </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<div class="container mt-4 mb-4">
+    <div class="text-center mt-4 mb-4">
+        <a href="tablazat.php" class="btn btn-secondary">További költségek megtekintése</a>
+    </div>
+    <div class="text-center mb-4">
+        <a href="index.html" class="btn btn-secondary">Vissza a kezdőlapra</a>
+    </div>
+  </div>
 
     <!-- Footer -->
   <footer class="bg-dark text-light text-center p-4 mt-5">
