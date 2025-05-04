@@ -1,8 +1,8 @@
 <?php
 include('db.php');
 
-// Költségek lekérése az adatbázisból
-$sql = "SELECT * FROM koltsegek ORDER BY datum DESC";
+// Költségek lekérése az adatbázisból, csak az utolsó 5 legfrissebb
+$sql = "SELECT * FROM koltsegek ORDER BY datum DESC LIMIT 5";
 $result = $conn->query($sql);
 ?>
 
@@ -17,20 +17,21 @@ $result = $conn->query($sql);
 </head>
 <body>
 
+
   <!-- Navigáció -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Költségnyilvántartó</a>
+      <a class="navbar-brand fs-5" href="index.html">Költségnyilvántartó</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Kezdőlap</a></li>
-            <li class="nav-item"><a class="nav-link" href="rolunk.html">Rólunk</a></li>
-            <li class="nav-item"><a class="nav-link" href="tablazat.html">Táblázat</a></li>
-            <li class="nav-item"><a class="nav-link" href="koltsegek.html">Költségek</a></li>
-            <li class="nav-item"><a class="nav-link" href="kapcsolat.html">Kapcsolat</a></li>
+        <ul class="navbar-nav ms-auto fs-6">
+          <li class="nav-item"><a class="nav-link" href="index.html">Kezdőlap</a></li>
+          <li class="nav-item"><a class="nav-link" href="rolunk.html">Rólunk</a></li>
+          <li class="nav-item"><a class="nav-link" href="tablazat.php">Táblázat</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="koltsegek.php">Költségek</a></li>
+          <li class="nav-item"><a class="nav-link" href="kapcsolat.html">Kapcsolat</a></li>
         </ul>
       </div>
     </div>
@@ -38,7 +39,7 @@ $result = $conn->query($sql);
 
   <div class="container mt-5">
     <h1 class="text-center mb-4">Költségnyilvántartás</h1>
-    <p class="text-center">Itt rögzítheted és megtekintheted a költségeidet.</p>
+    <p class="text-center">Itt rögzítheted és megtekintheted a frissen hozzáadott költségeidet.</p>
 
     <form action="submit_koltseg.php" method="POST">
       <div class="mb-3">
@@ -88,7 +89,9 @@ $result = $conn->query($sql);
       </tbody>
     </table>
   </div>
-
+  <footer class="bg-dark text-light text-center p-4 mt-5">
+    <p class="mb-0">© 2025 Költségnyilvántartó. Minden jog fenntartva.</p>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

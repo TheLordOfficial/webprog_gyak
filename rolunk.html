@@ -10,36 +10,87 @@
 <body>
 
   <!-- Navigáció -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <!-- Navigáció -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Költségnyilvántartó</a>
+      <a class="navbar-brand fs-5" href="index.html">Költségnyilvántartó</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Kezdőlap</a></li>
-            <li class="nav-item"><a class="nav-link" href="rolunk.html">Rólunk</a></li>
-            <li class="nav-item"><a class="nav-link" href="tablazat.php">Táblázat</a></li>
-            <li class="nav-item"><a class="nav-link" href="koltsegek.php">Költségek</a></li>
-            <li class="nav-item"><a class="nav-link" href="kapcsolat.html">Kapcsolat</a></li>
+        <ul class="navbar-nav ms-auto fs-6">
+          <li class="nav-item"><a class="nav-link" href="index.html">Kezdőlap</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="rolunk.html">Rólunk</a></li>
+          <li class="nav-item"><a class="nav-link" href="tablazat.php">Táblázat</a></li>
+          <li class="nav-item"><a class="nav-link" href="koltsegek.php">Költségek</a></li>
+          <li class="nav-item"><a class="nav-link" href="kapcsolat.html">Kapcsolat</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Rólunk -->
-  <div class="container mt-4">
-    <h1>Kik vagyunk?</h1>
-    <p>A mi csapatunk szenvedélyesen dolgozik azon, hogy mindig a legjobb minőségű szolgáltatásokat és termékeket kínálja ügyfeleinknek. Célunk, hogy mindig elégedettek legyetek, és azt kapjátok, amit vártok.</p>
+<div class="container mt-5">
+  <h1 class="mb-4 text-center">Kik vagyunk?</h1>
 
-    <h3>Csapatunk</h3>
-    <ul>
-      <li><strong>Simonyi Péter Pál</strong> - CEO</li>
-      <li><strong>John Doe</strong> - Marketing vezető</li>
-      <li><strong>Jane Doe</strong> - Fejlesztő</li>
-    </ul>
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="bg-light p-4 rounded shadow">
+        <p class="fs-5">
+          A <strong>Költségnyilvántartó</strong> csapata olyan elhivatott szakemberekből áll, akik célul tűzték ki, hogy a pénzügyi tervezést mindenki számára egyszerűvé, átláthatóvá és hatékonnyá tegyék. Hiszünk abban, hogy a modern technológia és a felhasználóbarát kialakítás kéz a kézben járhat.
+        </p>
+
+        <p class="fs-5 mt-3">
+          Rendszerünket folyamatosan fejlesztjük annak érdekében, hogy az ne csupán költségkövető eszköz legyen, hanem valódi segítség a pénzügyi tudatosság elérésében. Legyen szó diákokról, kisvállalkozókról vagy családokról, mindenki megtalálhatja nálunk a számára hasznos funkciókat.
+        </p>
+
+        <p class="fs-5 mt-3 mb-0">
+          Küldetésünk, hogy a pénzügyek kezelése ne stresszforrás, hanem egy jól átlátható, kontrollált terület legyen az életedben.
+        </p>
+      </div>
+    </div>
   </div>
+</div>
+
+    <h3 class="mb-4 text-center">Csapatunk</h3>
+  <div class="container my-5">
+    <div class="row justify-content-center g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/person1.jpg" class="card-img-top" alt="Adrian Smith">
+          <div class="card-body">
+            <h5 class="card-title">Adrian Smith</h5>
+            <p class="card-text">Fejlesztési igazgató, akire mindig lehet számítaniés végtelen új ötletekkel képes előállni.</p>
+            <a href="#" class="btn btn-primary">Tovább</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/person2.jpg" class="card-img-top" alt="John Doe">
+          <div class="card-body">
+            <h5 class="card-title">John Doe</h5>
+            <p class="card-text">Marketing vezető, aki ügyel a márka megjelenésére és üzeneteire.</p>
+            <a href="#" class="btn btn-primary">Tovább</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/person3.jpg" class="card-img-top" alt="Chris Evans">
+          <div class="card-body">
+            <h5 class="card-title">Chris Evans</h5>
+            <p class="card-text">Projektmenedzser, aki minden feladatot időben és pontosan szállít.</p>
+            <a href="#" class="btn btn-primary">Tovább</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark text-light text-center p-4 mt-5">
+    <p class="mb-0">© 2025 Költségnyilvántartó. Minden jog fenntartva.</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
