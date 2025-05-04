@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  .container {
+    padding-bottom: 100px;
+  }
+  
+  h2 {
+    font-weight: bold;
+    color: #222;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .bg-light {
+    background-color: #f8f9fa !important;
+  }
+  
+  .shadow {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (hover: hover) {
+    .bg-light:hover {
+      background-color: #e9ecef !important;
+      transition: background-color 0.3s ease;
+    }
+  }
+  .text-shadow {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+  }
+  
+  .tanacsadas-section {
+    background: linear-gradient(135deg, #1e1e1e, #2b2b2b);
+    color: #f1f1f1;
+    overflow: hidden;
+  }
+  
+  .tanacsadas-section h2 {
+    color: #ffffff;
+    animation: fadeInLeft 1s ease-in-out;
+  }
+  
+  .tanacsadas-section p {
+    color: #cccccc;
+    animation: fadeInLeft 1.2s ease-in-out;
+  }
+  
+  .tanacsadas-section .btn {
+    transition: background-color 0.3s ease;
+  }
+  
+  .tanacsadas-section .btn:hover {
+    background-color: #ffffff;
+    color: #1e1e1e;
+  }
+  
+  .tanacsadas-img {
+    width: 100%; /* A kép teljes szélességű */
+    max-width: 400px; /* Korlátozzuk a maximális szélességet, ha túl nagy lenne */
+    margin-left: auto; /* A bal oldali margót automatikusan igazítja */
+    display: block;
+  }
+  
+  @keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  #tanacsadas img {
+    max-width: 150px; /* Ikon maximális szélessége */
+    height: auto; /* Arányos magasság */
+  }
+
